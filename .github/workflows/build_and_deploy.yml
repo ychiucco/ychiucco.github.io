@@ -1,0 +1,24 @@
+name: Build and deploy
+run-name: ${{ github.actor }} is deploying 🚀✨
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Deploy
+        uses: mhausenblas/mkdocs-deploy-gh-pages@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CONFIG_FILE: mkdocs.yml
+          GITHUB_DOMAIN: ychiucco.github.io
+          REQUIREMENTS: requirements.txt
