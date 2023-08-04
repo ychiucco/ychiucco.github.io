@@ -21,8 +21,8 @@ theme:
 
 
 nav:
-  - Scacchi:
-  - Libri:
-  - Musica:
+  - Scacchi: scacchi.md
+  - Libri: libri.md
+  - Musica: musica.md
 
   
