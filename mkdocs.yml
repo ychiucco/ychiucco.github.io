@@ -1,4 +1,5 @@
-site_name: yuri
+site_name: chcyru
+site_url: https://ychiucco.github.io
 
 theme:
   name: "material"
@@ -17,3 +18,11 @@ theme:
     toggle:
       icon: material/weather-night
       name: Switch to light mode
+
+
+nav:
+  - Scacchi:
+  - Libri:
+  - Musica:
+
+  
