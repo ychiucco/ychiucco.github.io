@@ -1,0 +1,16 @@
+---
+layout: default
+title: Code
+---
+<h1>Languages I can use</h1>
+
+
+<ul>
+    {% for lang in site.code %}
+    <li>
+        <h2><a href="{{ lang.url }}">{{ lang.name }}</a></h2>
+        <h3>{{ lang.author }}</h3>
+        <p>{{ lang.content | markdownify }}</p>
+    </li>
+    {% endfor %}
+</ul>

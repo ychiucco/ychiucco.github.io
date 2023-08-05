@@ -1,0 +1,12 @@
+- name: Home
+  link: /
+- name: Blog
+  link: /blog.html
+- name: Chess
+  link: /chess.html
+- name: Coding
+  link: /code.html
+- name: Math
+  link: /math.html
+- name: Books
+  link: /books.html

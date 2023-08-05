@@ -1,0 +1,9 @@
+collections:
+  code:
+    output: true
+  chess:
+    output: false
+  books:
+    output: false
+
+baseurl: ""
