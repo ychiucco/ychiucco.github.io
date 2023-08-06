@@ -6,6 +6,7 @@
 		<!-- CSS -->
 		<link rel="stylesheet" href="/assets/css/styles.css">
 		<link rel="stylesheet" href="/assets/css/chessboard-1.0.0.css">
+		<link rel="stylesheet" href="/assets/css/termynal.css">
 		<!-- JS -->
 		<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 		<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
@@ -68,7 +69,6 @@
 
 		<h1>Languages</h1>
 
-
 <ul>
     
     <li>
@@ -86,6 +86,29 @@
     </li>
     
 </ul>
+
+
+<h1>Termynal</h1>
+
+This is <a href="https://github.com/ines/termynal">termynal.js</a> by Ines Montani
+
+<div id="termynal" data-termynal>
+    <span data-ty="input"  data-ty-prompt="🐷🦁🐸">pip install numpy</span>
+    <span data-ty="progress"></span>
+    <span data-ty>Successfully installed numpy</span>
+</div>
+
+
+another example
+
+<div id="termynal2" data-termynal>
+    <span data-ty="input">pip install sdkjfhausihfiahfgyseruakrhaueshi</span>
+    <span data-ty="progress" data-ty-progressPercent="66"></span>
+    <span data-ty>❌ FATAL ERROR</span>
+</div>
+
+
+<script src="/assets/js/termynal.js" data-termynal-container="#termynal|#termynal2"></script>
 
 		<footer>
 			<p>&copy; 2023 Yuri Chiucconi. All rights reserved.</p>
