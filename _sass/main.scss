@@ -1,4 +1,7 @@
-/* styles.scss */
+$primary-color: #0d8228;
+$secondary-color: #ffffff;
+$accent-color: #24a821;
+
 
 body {
     font-family: Arial, sans-serif;
@@ -7,14 +10,14 @@ body {
 }
   
 header {
-  background-color: #333;
-  color: #fff;
+  background-color: $primary-color;
+  color: $secondary-color;
   padding: 10px;
 }
 
 nav {
 
-    background-color: #555;
+    background-color: $primary-color;
     
     ul.navbar-list {
         list-style: none;
@@ -35,12 +38,12 @@ nav {
     }
 
     a {
-        color: #fff;
+        color: $secondary-color;
         text-decoration: none;
         display: inline-block;
         padding: 10px 20px;
         border-radius: 4px;
-        background-color: #555;
+        background-color: $primary-color;
         transition: background-color 0.3s ease;
 
         .button-text {
@@ -49,16 +52,12 @@ nav {
     }
 
     a:hover {
-        background-color: #777;
+        background-color: $accent-color;
     }
 
     a.current {
-        background-color: #ffffff;
-        color: rgb(21, 4, 204);
-    }
-
-    a.current:hover {
-        background-color: #00ff51;
+        background-color: $secondary-color;
+        color: $primary-color;
     }
 }
 
@@ -71,25 +70,25 @@ section {
 }
 
 h1 {
-  color: #333;
-  font-size: 24px;
+  font-size: 42px;
   margin-bottom: 10px;
 }
 
 p {
-  color: #555;
   font-size: 16px;
   line-height: 1.5;
 }
 
 footer {
-  background-color: #333;
+  font-family: fantasy;
+  background-color: $primary-color;
   padding: 10px;
   text-align: center;
 }
 
 footer p {
+
   margin: 0;
-  color: #ffffff;
+  color: $secondary-color;
 }
   
