@@ -2,6 +2,9 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 header {
@@ -32,7 +35,7 @@ nav a {
   text-decoration: none;
   display: inline-block;
   padding: 10px 20px;
-  border-radius: 4px;
+  border-radius: 5px 5px 0 0; /* Squared bottom corners */
   background-color: #0d8228;
   transition: background-color 0.3s ease;
 }
@@ -49,6 +52,9 @@ nav a.current {
 
 main {
   padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 section {
@@ -70,6 +76,7 @@ footer {
   background-color: #0d8228;
   padding: 10px;
   text-align: center;
+  margin-top: auto; /* Push the footer to the bottom of the container */
 }
 
 footer p {
