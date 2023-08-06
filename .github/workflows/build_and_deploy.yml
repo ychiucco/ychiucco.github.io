@@ -1,5 +1,5 @@
-name: Build and deploy
-run-name: ${{ github.actor }} is deploying 🚀✨
+name: Jekyll Build and Deploy
+run-name: ${{ github.actor }} is deploying 💻 🚀
 
 on:
   push:
@@ -7,18 +7,26 @@ on:
       - main
 
 jobs:
-  
-  build:
-    name: Deploy
+
+  build-and-deploy:    
+
+    name: Build and deploy
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout main
+      - name: Checkout repository
         uses: actions/checkout@v2
-  
-      - name: Deploy docs
-        uses: mhausenblas/mkdocs-deploy-gh-pages@master
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          CONFIG_FILE: mkdocs.yml
-          REQUIREMENTS: requirements.txt
-  
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.7
+      # - name: Install dependencies
+      #   run: |
+      #     gem install bundler
+      #     bundle install
+      - name: Build Jekyll site
+        run: bundle exec jekyll build --verbose
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
