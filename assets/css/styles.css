@@ -11,10 +11,15 @@ header {
   padding: 10px;
 }
 
-nav ul {
+nav {
+  background-color: #555;
+}
+nav ul.navbar-list {
   list-style: none;
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: space-around; /* Adjust the alignment as needed */
 }
 nav li {
   display: inline-block;
@@ -39,7 +44,7 @@ nav a:hover {
   background-color: #777;
 }
 nav a.current {
-  background-color: #ff1100;
+  background-color: #ffffff;
   color: rgb(21, 4, 204);
 }
 nav a.current:hover {
