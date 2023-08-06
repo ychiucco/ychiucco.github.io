@@ -1,3 +1,0 @@
-# Yuri Chiucconi
-
-Ciao, mondo.
