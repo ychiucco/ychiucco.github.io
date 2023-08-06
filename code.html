@@ -4,7 +4,6 @@ title: Code
 ---
 <h1>Languages</h1>
 
-
 <ul>
     {% for lang in site.code %}
     <li>
@@ -14,3 +13,26 @@ title: Code
     </li>
     {% endfor %}
 </ul>
+
+
+<h1>Termynal</h1>
+
+This is <a href="https://github.com/ines/termynal">termynal.js</a> by Ines Montani
+
+<div id="termynal" data-termynal>
+    <span data-ty="input"  data-ty-prompt="🐷🦁🐸">pip install numpy</span>
+    <span data-ty="progress"></span>
+    <span data-ty>Successfully installed numpy</span>
+</div>
+
+
+another example
+
+<div id="termynal2" data-termynal>
+    <span data-ty="input">pip install sdkjfhausihfiahfgyseruakrhaueshi</span>
+    <span data-ty="progress" data-ty-progressPercent="66"></span>
+    <span data-ty>❌ FATAL ERROR</span>
+</div>
+
+
+<script src="{{ '/assets/js/termynal.js' | relative_url }}" data-termynal-container="#termynal|#termynal2"></script>
