@@ -4,11 +4,11 @@
 		<meta charset="utf-8">
 		<title>{{ page.title }}</title>
 		<!-- CSS -->
-		<link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
 		<link rel="stylesheet" href="{{ '/assets/css/chessboard-1.0.0.css' | relative_url }}">
 		<link rel="stylesheet" href="{{ '/assets/css/termynal.css' | relative_url }}">
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-		<!-- JS -->
+		<link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+		<!-- JS --> 
 		<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 		<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 		<script src="{{ '/assets/js/chessboard-1.0.0.js' | relative_url }}"></script>
@@ -20,17 +20,22 @@
 		<link rel="manifest" href="/site.webmanifest">
 	</head>
 	<body>
+
 		{% include navigation.html %}
-		<div class="container">
-			<div class="column left-column"></div>
-			<div class="column central-column">
-			{{ content }}
+
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-2"></div>
+				<div class="col-8">
+				{{ content }}
+				</div>
+				<div class="col-2"></div>
 			</div>
-    		<div class="column right-column"></div>
   		</div>
 
 		<footer>
 			<p>&copy; 2023 Yuri Chiucconi. All rights reserved.</p>
 		</footer>
+
 	</body>
 </html>
