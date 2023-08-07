@@ -1,6 +1,7 @@
 $primary-color: #0d8228;
 $secondary-color: #ffffff;
 $accent-color: #24a821;
+$background-color: #dddddd63;
 
 
 body {
@@ -100,3 +101,28 @@ footer p {
   color: $secondary-color;
 }
   
+
+.container {
+  display: flex;
+  flex: 1;
+}
+
+.column {
+  padding: 20px;
+  flex: 1;
+}
+
+.left-column {
+  background-color: $secondary-color;
+  flex: 1;
+}
+
+.central-column {
+  background-color: $background-color;
+  flex: 4;
+}
+
+.right-column {
+  background-color: $secondary-color;
+  flex: 1;
+}
