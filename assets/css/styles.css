@@ -84,4 +84,29 @@ footer p {
   color: #ffffff;
 }
 
+.container {
+  display: flex;
+  flex: 1;
+}
+
+.column {
+  padding: 20px;
+  flex: 1;
+}
+
+.left-column {
+  background-color: #ffffff;
+  flex: 1;
+}
+
+.central-column {
+  background-color: rgba(221, 221, 221, 0.3882352941);
+  flex: 4;
+}
+
+.right-column {
+  background-color: #ffffff;
+  flex: 1;
+}
+
 /*# sourceMappingURL=styles.css.map */
