@@ -3,7 +3,4 @@ layout: default
 title: Home
 ---
 
-# {{ "Hello World!" | downcase }}
-## {{ "Hello World!" | downcase }}
-### {{ "Hello World!" | downcase }}
-#### {{ "Hello World!" | downcase }}
+<button type="button" class="btn btn-outline-primary btn-lg">Hello</button>

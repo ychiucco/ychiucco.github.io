@@ -1,5 +1,3 @@
-- name: Home
-  link: /
 - name: Blog
   link: /blog.html
 - name: Chess
@@ -9,6 +7,11 @@
 - name: Math
   link: /math.html
 - name: Books
-  link: /books.html
+  items:
+    - name: By Author
+      link: /books/author.html
+    - name: By Title
+      link: /books/title.html
+    - name: By Cover
 - name: Music
   link: /music.html
