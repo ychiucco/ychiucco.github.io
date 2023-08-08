@@ -12,6 +12,5 @@
       link: /books/author.html
     - name: By Title
       link: /books/title.html
-    - name: By Cover
 - name: Music
   link: /music.html

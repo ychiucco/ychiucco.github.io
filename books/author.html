@@ -1,0 +1,28 @@
+---
+layout: default
+title: Books (author)
+---
+
+{% assign authors = site.data.books_read | map: "author" | uniq %}
+<div class="container">
+{% for author in authors %}
+        <div class="row">
+            <h1>{{ author }}</h1>
+        </div>
+
+        <div class="row">
+        {% for book in site.data.books_read %}
+        {% if book.author == author %}
+            <div class="col-3">
+                <div class="card custom-card">
+                    <img src="{{ book.cover }}" class="card-img-top img-fluid" alt="{{ book.title }}">
+                    <div class="card-body">
+                        <em class="card-title">{{ book.title}}</em>
+                    </div>
+                </div>
+            </div>    
+        {% endif %}
+        {% endfor %}
+        </div>
+{% endfor %}
+</div>
