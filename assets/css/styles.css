@@ -14,6 +14,11 @@ a.me-4 { /* remove underline from footer social icons */
 
 .navbar {
   background-color: black;
+  color: white;
+}
+
+.dropdown-toggle {
+  color: white;
 }
 
 .social {
