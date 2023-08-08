@@ -21,6 +21,7 @@ a.me-4 { /* remove underline from footer social icons */
 .navbar {
     background-color: $navbar-background-color;
     color: $navbar-color;
+    font-size: larger;
 }
 .dropdown-toggle{
     color: $navbar-color;
@@ -29,6 +30,7 @@ a.me-4 { /* remove underline from footer social icons */
 .social {
     background-color: $navbar-background-color;
     color: $external-col-color;
+    font-size: x-large;
 }
 
 .copyright {
