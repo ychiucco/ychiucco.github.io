@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(17, 146, 90);">
+<nav class="navbar navbar-expand-lg navbar-dark">
 	<div class="container-fluid">
 
 		<a class="navbar-brand" href="/">
@@ -6,22 +6,23 @@
 		</a>
 		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
-		  </button>
+		</button>
 
-		
 		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<div class="container flex-fill">
 			<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 				{% for item in site.data.navigation %}
+				<div class="container flex-fill">
 					{% if item.items %}
 					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-							{{ item.name }}
-						</a>
-						<ul class="dropdown-menu">
-							{% for it in item.items %}
-							  <li><a class="dropdown-item" href="{{ it.link }}">{{ it.name }}</a></li>
-							{% endfor %}
-						</ul>
+							<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								{{ item.name }}
+							</a>
+							<ul class="dropdown-menu">
+								{% for it in item.items %}
+								<li><a class="dropdown-item" href="{{ it.link }}">{{ it.name }}</a></li>
+								{% endfor %}
+							</ul>
 					</li>
 					{% else %}
 					<li class="nav-item">
@@ -30,8 +31,11 @@
 						</a>
 					</li>
 					{% endif %}
+				</div>
 				{% endfor %}
 			</ul>
+			</div>
 		</div>
+		
 	</div>
 </nav>

@@ -1,6 +1,32 @@
-$font-stack: Arial, sans-serif;
+$font-stack: sans-serif;
+$background-color: rgb(227, 227, 227);
+$external-col-color: white;
+$navbar-color: black;
 
-$primary-color: #0d8228;
-$secondary-color: #e81616;
-$accent-color: #24a821;
-$background-color: #dddddd9d;
+.main-wrapper {
+    font-family: $font-stack;
+    height: 100vh;  
+    background-color: $background-color;
+}
+
+.col-2 {
+    background-color: $external-col-color;
+}
+
+a.me-4 { /* remove underline from footer social icons */
+    text-decoration: none;
+}
+ 
+.navbar {
+    background-color: $navbar-color;
+
+}
+
+.social {
+    background-color: $navbar-color;
+    color: $external-col-color;
+}
+
+.copyright {
+    background-color: $background-color;
+}
