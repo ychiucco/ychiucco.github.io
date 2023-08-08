@@ -1,7 +1,8 @@
 $font-stack: sans-serif;
 $background-color: rgb(227, 227, 227);
 $external-col-color: white;
-$navbar-color: black;
+$navbar-background-color: black;
+$navbar-color: white;
 
 .main-wrapper {
     font-family: $font-stack;
@@ -18,12 +19,15 @@ a.me-4 { /* remove underline from footer social icons */
 }
  
 .navbar {
-    background-color: $navbar-color;
-
+    background-color: $navbar-background-color;
+    color: $navbar-color;
+}
+.dropdown-toggle{
+    color: $navbar-color;
 }
 
 .social {
-    background-color: $navbar-color;
+    background-color: $navbar-background-color;
     color: $external-col-color;
 }
 
